@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Db project Insta Ai",
+    "version": "1.0",
+    "description": " save the reels on instagram to actually benifit from, no cap.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/reels/*/"],
+      "js": ["content.js"]
+    }
+  ]
+  }
